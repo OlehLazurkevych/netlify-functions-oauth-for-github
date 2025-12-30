@@ -84,7 +84,6 @@ exports.handler = async (event) => {
             e.origin
           );
           window.removeEventListener("message", recieveMessage, false);
-          window.close();
         }
         window.addEventListener("message", recieveMessage, false);
         // Let the main window know we're ready
